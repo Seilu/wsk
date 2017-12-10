@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	float tab[5];
+	float *t;
+	t=&tab[0];
+	float a;
+	
+	cout<<"Podaj 5 liczb: "; 
+	for(int i=0; i<5; i++) 
+	{
+	cin>>a;
+	
+	t[i]=a;
+	}
+	cout<<endl;
+	cout<< "Pdodaj liczbe przez ktora wykonac dzialania: "; cin>>a; cout<< endl;
+	 for(int j=0; j<5; j++)
+	 {
+	 	cout<<*t*a<<"\t\t";
+	 	t+=1;
+	 }
+	 	cout<<endl;
+	 for(int j=0; j<5; j++)
+	 {
+	 	cout<<t<<"\t";
+	 	t+=1;
+	 }
+	 cout<< endl << endl;
+	 t=&tab[0];
+	 for(int j=0; j<5; j++)
+	 {
+	 	cout<<*t+a<<"\t\t";
+	 	t+=1;
+	 }
+	 	cout<<endl;
+	 for(int j=0; j<5; j++)
+	 {
+	 	cout<<t<<"\t";
+	 	t+=1;
+	 }
+	 
+	return 0;
+}
